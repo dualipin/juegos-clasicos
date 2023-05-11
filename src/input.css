@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.link-header{
+    @apply w-20 mx-auto rounded-sm bg-blue-400
+     ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300
+    transition hover:duration-150;
+}
