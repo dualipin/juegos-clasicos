@@ -28,11 +28,7 @@ main{
 }
 
 main section {
-    background-color: antiquewhite;
-    margin: 20px 30px;
     border-radius: 15px;
-    padding: 1.5em;
-
 }
 
 footer {
