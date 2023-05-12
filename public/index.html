@@ -1,150 +1,163 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/style/main.css">
-    <link rel="stylesheet" href="./src/style/index.css">
-    <title>Simulacion - Proyecto Integrador</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./app/style/main.css">
+  <link rel="stylesheet" href="./app/style/index.css">
+  <title>Simulacion - Proyecto Integrador</title>
 </head>
+
 <body>
-      <header class="">
-          <img src="./res/img/header.png" alt="header itsm" class="rounded-lg sm:w-4/5 w-full">
-          <h1 class="text-2xl text-center">Simulacion</h1>
-          <nav class="mx-auto py-3">
-              <a href="./">Inicio</a>
-              <a href="./about.html">Sobre nosotros</a>
-          </nav>
-      </header>
+  <header class="bg-slate-100">
+    <img src="./app/res/img/header.png" alt="header itsm" class="rounded-lg sm:w-4/5 w-11/12">
+    <h1 class="text-2xl text-center">Simulacion</h1>
+    <nav class="mx-auto py-3">
+      <a href="./">Inicio</a>
+      <a href="./about.html">Sobre nosotros</a>
+    </nav>
+  </header>
 
-      <main class="grid content-center w-full">
+  <main class="m-auto container p-10 bg-slate-50 w-full">
 
-        <section class="card">
-          <h2 class="text-2xl ">Bienvenido</h2>
-          <p>Aquí encontrarás un pequeño juego de dados que hace uso de las variables pseudoaleatorias.</p>
-        </section>
-        
-        <section class="card grid-row space-y-5 lg:flex lg:space-x-5 lg:space-y-0">
-          <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
-            <img
-              alt="Office"
-              src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-              class="h-56 w-full object-cover"
-            />
-          
-            <div class="bg-white p-4 sm:p-6">
-              <time datetime="2022-10-10" class="block text-xs text-gray-500">
-                Metodo de cuadrados medios
-              </time>
-          
-              <a href="./app/dados.html">
-                <h3 class="mt-0.5 text-lg text-gray-900">
-                  Juego de dados
-                </h3>
-              </a>
-          
-              <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-                dolores, possimus pariatur animi temporibus nesciunt praesentium dolore
-                sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta,
-                voluptates neque explicabo tempora nisi culpa eius atque dignissimos.
-                Molestias explicabo corporis voluptatem?
-              </p>
-            </div>
-          </article>
+    <h1 class="text-2xl ">Bienvenido</h1>
+    <p>Aquí encontrarás pequeños juegos de azar y memoria que hacen uso de las variables pseudoaleatorias.</p>
 
-          <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
-            <img
-              alt="Office"
-              src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-              class="h-56 w-full object-cover"
-            />
-          
-            <div class="bg-white p-4 sm:p-6">
-              <time datetime="2022-10-10" class="block text-xs text-gray-500">
-                Metodo de
-              </time>
-          
-              <a href="./app/gato.html">
-                <h3 class="mt-0.5 text-lg text-gray-900">
-                  Juego de Gato
-                </h3>
-              </a>
-          
-              <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-                dolores, possimus pariatur animi temporibus nesciunt praesentium dolore
-                sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta,
-                voluptates neque explicabo tempora nisi culpa eius atque dignissimos.
-                Molestias explicabo corporis voluptatem?
-              </p>
-            </div>
-          </article>
+    <section class="grid grid-cols-1 gap-10 md:grid-cols-2 pt-5 lg:grid-cols-4">
+      <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+        <img alt="Office" src="./app/res/img/dados.jpg" class="h-56 w-full object-cover" />
 
-          <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
-            <img
-              alt="Office"
-              src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-              class="h-56 w-full object-cover"
-            />
-          
-            <div class="bg-white p-4 sm:p-6">
-              <time datetime="2022-10-10" class="block text-xs text-gray-500">
-                Metodo de Cuadrados Medios
-              </time>
-          
-              <a href="#">
-                <h3 class="mt-0.5 text-lg text-gray-900">
-                  Memorama
-                </h3>
-              </a>
-          
-              <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-                dolores, possimus pariatur animi temporibus nesciunt praesentium dolore
-                sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta,
-                voluptates neque explicabo tempora nisi culpa eius atque dignissimos.
-                Molestias explicabo corporis voluptatem?
-              </p>
-            </div>
-          </article>
+        <div class="bg-white p-4 sm:p-6">
+          <time datetime="2022-10-10" class="block text-xs text-gray-500">
+            Metodo de cuadrados medios
+          </time>
 
-          <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
-            <img
-              alt="Office"
-              src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-              class="h-56 w-full object-cover"
-            />
-          
-            <div class="bg-white p-4 sm:p-6">
-              <time datetime="2022-10-10" class="block text-xs text-gray-500">
-                Metodo de
-              </time>
-          
-              <a href="./app/memorama.html">
-                <h3 class="mt-0.5 text-lg text-gray-900">
-                  Juego de Gato
-                </h3>
-              </a>
-          
-              <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-                dolores, possimus pariatur animi temporibus nesciunt praesentium dolore
-                sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta,
-                voluptates neque explicabo tempora nisi culpa eius atque dignissimos.
-                Molestias explicabo corporis voluptatem?
-              </p>
-            </div>
-          </article>
+          <a href="./app/dados.html">
+            <h3 class="mt-0.5 text-lg text-gray-900">
+              Juego de dados
+            </h3>
+          </a>
 
-        </section>
-    
-      </main>
-    
-      <footer class="py-4">
-        <h5>Instituto Tecnológico Superior de Macuspana &copy; 2023</h5>
-      </footer>
-    
+          <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
+            dolores, possimus pariatur animi temporibus nesciunt praesentium dolore
+            sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta,
+            voluptates neque explicabo tempora nisi culpa eius atque dignissimos.
+            Molestias explicabo corporis voluptatem?
+          </p>
+        </div>
+      </article>
+
+      <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+        <img alt="Office" src="./app/res/img/gato.jpg" class="h-56 w-full object-cover" />
+
+        <div class="bg-white p-4 sm:p-6">
+          <time datetime="2022-10-10" class="block text-xs text-gray-500">
+            Metodo de
+          </time>
+
+          <a href="./app/gato.html">
+            <h3 class="mt-0.5 text-lg text-gray-900">
+              Juego de Gato
+            </h3>
+          </a>
+
+          <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
+            dolores, possimus pariatur animi temporibus nesciunt praesentium dolore
+            sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta,
+            voluptates neque explicabo tempora nisi culpa eius atque dignissimos.
+            Molestias explicabo corporis voluptatem?
+          </p>
+        </div>
+      </article>
+
+      <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+        <img alt="Office" src="./app/res/img/memorama.jpg" class="h-56 w-full object-cover" />
+
+        <div class="bg-white p-4 sm:p-6">
+          <time datetime="2022-10-10" class="block text-xs text-gray-500">
+            Metodo de Cuadrados Medios
+          </time>
+
+          <a href="#">
+            <h3 class="mt-0.5 text-lg text-gray-900">
+              Memorama
+            </h3>
+          </a>
+
+          <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
+            dolores, possimus pariatur animi temporibus nesciunt praesentium dolore
+            sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta,
+            voluptates neque explicabo tempora nisi culpa eius atque dignissimos.
+            Molestias explicabo corporis voluptatem?
+          </p>
+        </div>
+      </article>
+
+      <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+        <img alt="Office"
+          src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+          class="h-56 w-full object-cover" />
+
+        <div class="bg-white p-4 sm:p-6">
+          <time datetime="2022-10-10" class="block text-xs text-gray-500">
+            Metodo de
+          </time>
+
+          <a href="./app/memorama.html">
+            <h3 class="mt-0.5 text-lg text-gray-900">
+              Juego de Gato
+            </h3>
+          </a>
+
+          <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
+            dolores, possimus pariatur animi temporibus nesciunt praesentium dolore
+            sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta,
+            voluptates neque explicabo tempora nisi culpa eius atque dignissimos.
+            Molestias explicabo corporis voluptatem?
+          </p>
+        </div>
+      </article>
+
+      <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+        <img alt="Office"
+          src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+          class="h-56 w-full object-cover" />
+
+        <div class="bg-white p-4 sm:p-6">
+          <time datetime="2022-10-10" class="block text-xs text-gray-500">
+            Metodo de cuadrados medios
+          </time>
+
+          <a href="./app/dados.html">
+            <h3 class="mt-0.5 text-lg text-gray-900">
+              Juego de dados
+            </h3>
+          </a>
+
+          <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
+            dolores, possimus pariatur animi temporibus nesciunt praesentium dolore
+            sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta,
+            voluptates neque explicabo tempora nisi culpa eius atque dignissimos.
+            Molestias explicabo corporis voluptatem?
+          </p>
+        </div>
+      </article>
+
+    </section>
+
+  </main>
+
+  <footer class="py-4">
+    <h5>Instituto Tecnológico Superior de Macuspana &copy; 2023</h5>
+  </footer>
+
 </body>
+
 </html>

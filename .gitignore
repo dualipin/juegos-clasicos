@@ -1,2 +1,11 @@
 #Modulos de node
 node_modules
+
+#Exclusion de tailwind
+tailwind.css
+tailwind.cofig.js
+
+#Exclusion de node
+package.json
+package-lock.js
+
