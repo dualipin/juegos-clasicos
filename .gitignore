@@ -3,7 +3,7 @@ node_modules
 
 #Exclusion de tailwind
 tailwind.css
-tailwind.cofig.js
+tailwind.config.js
 
 #Exclusion de node
 package.json
