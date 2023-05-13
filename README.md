@@ -8,4 +8,4 @@ Este proyecto dispone de una coleccion de juegos:
 * Memorama - Juego de memoria
 * Adivina el numero 
 
-Cada uno de los juegos usa diferentes metodos de generacion de variables aleatorias
+Cada uno de los juegos usa diferentes metodos de generacion de numeros pseudoaleatorios
