@@ -22,15 +22,6 @@ nav a {
     padding: 8px;
 }
 
-main{
-    justify-content: center;
-    width: 80%;
-}
-
-main section {
-    border-radius: 15px;
-}
-
 footer {
     text-align: center;
     margin-top: auto;
