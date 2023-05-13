@@ -20,74 +20,73 @@
     </nav>
   </header>
 
-  <main class="m-auto container p-10 bg-slate-50 w-full">
+  <main class="m-auto container py-5 px-10 bg-slate-50 w-full">
 
     <h1 class="text-2xl ">Bienvenido</h1>
     <p>Aquí encontrarás pequeños juegos de azar y memoria que hacen uso de las variables pseudoaleatorias.</p>
 
     <section class="grid grid-cols-1 gap-10 md:grid-cols-2 pt-5 lg:grid-cols-4">
+      
+      <!-- #region Juego de dados-->
       <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
-        <img alt="Office" src="./app/res/img/dados.jpg" class="h-56 w-full object-cover" />
-
+        <img alt="Dados" src="./app/res/img/dados.jpg" class="h-56 w-full object-cover" />
+        
         <div class="bg-white p-4 sm:p-6">
-          <time datetime="2022-10-10" class="block text-xs text-gray-500">
+          <h5 class="block text-xs text-gray-500">
             Metodo de cuadrados medios
-          </time>
-
+          </h5>
+          
           <a href="./app/dados.html">
             <h3 class="mt-0.5 text-lg text-gray-900">
               Juego de dados
             </h3>
           </a>
-
+          
           <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-            dolores, possimus pariatur animi temporibus nesciunt praesentium dolore
-            sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta,
-            voluptates neque explicabo tempora nisi culpa eius atque dignissimos.
-            Molestias explicabo corporis voluptatem?
+            En este juego, se utilizan variables pseudoaleatorias generadas por un algoritmo determinista en lugar de dados reales.
           </p>
         </div>
       </article>
-
+      <!-- #endregion -->
+      
+      <!-- #region Juego de Gato-->
       <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
         <img alt="Office" src="./app/res/img/gato.jpg" class="h-56 w-full object-cover" />
-
+        
         <div class="bg-white p-4 sm:p-6">
-          <time datetime="2022-10-10" class="block text-xs text-gray-500">
-            Metodo de
-          </time>
-
+          <h5 class="block text-xs text-gray-500">
+            Metodo de Productos Medios
+          </h5>
+          
           <a href="./app/gato.html">
             <h3 class="mt-0.5 text-lg text-gray-900">
               Juego de Gato
             </h3>
           </a>
-
+          
           <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-            dolores, possimus pariatur animi temporibus nesciunt praesentium dolore
-            sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta,
-            voluptates neque explicabo tempora nisi culpa eius atque dignissimos.
-            Molestias explicabo corporis voluptatem?
+            El juego de Tic Tac Toe, también conocido como Tres en Raya, es un juego clásico y sencillo que ahora se ha adaptado
+            para utilizar el método de cuadrados medios en la generación de variables pseudoaleatorias.
           </p>
         </div>
       </article>
+      <!-- #endregion -->
 
+      <!-- #region Memorama-->
       <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
         <img alt="Office" src="./app/res/img/memorama.jpg" class="h-56 w-full object-cover" />
-
+        
         <div class="bg-white p-4 sm:p-6">
-          <time datetime="2022-10-10" class="block text-xs text-gray-500">
-            Metodo de Cuadrados Medios
-          </time>
-
+          <h5 class="block text-xs text-gray-500">
+            Metodo Congruencial Lineal
+          </h5>
+          
           <a href="#">
             <h3 class="mt-0.5 text-lg text-gray-900">
               Memorama
             </h3>
           </a>
-
+          
           <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
             dolores, possimus pariatur animi temporibus nesciunt praesentium dolore
@@ -97,23 +96,25 @@
           </p>
         </div>
       </article>
-
+      <!-- #endregion -->
+      
+      <!-- #region Adivina el numero-->
       <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
         <img alt="Office"
-          src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-          class="h-56 w-full object-cover" />
-
+        src="./app/res/img/numeros.jpg"
+        class="h-56 w-full object-cover" />
+        
         <div class="bg-white p-4 sm:p-6">
           <time datetime="2022-10-10" class="block text-xs text-gray-500">
             Metodo de
           </time>
-
+          
           <a href="./app/memorama.html">
             <h3 class="mt-0.5 text-lg text-gray-900">
-              Juego de Gato
+              Adivina el Número
             </h3>
           </a>
-
+          
           <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
             dolores, possimus pariatur animi temporibus nesciunt praesentium dolore
@@ -123,38 +124,13 @@
           </p>
         </div>
       </article>
-
-      <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
-        <img alt="Office"
-          src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-          class="h-56 w-full object-cover" />
-
-        <div class="bg-white p-4 sm:p-6">
-          <time datetime="2022-10-10" class="block text-xs text-gray-500">
-            Metodo de cuadrados medios
-          </time>
-
-          <a href="./app/dados.html">
-            <h3 class="mt-0.5 text-lg text-gray-900">
-              Juego de dados
-            </h3>
-          </a>
-
-          <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-            dolores, possimus pariatur animi temporibus nesciunt praesentium dolore
-            sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta,
-            voluptates neque explicabo tempora nisi culpa eius atque dignissimos.
-            Molestias explicabo corporis voluptatem?
-          </p>
-        </div>
-      </article>
+      <!-- #endregion -->
 
     </section>
 
   </main>
 
-  <footer class="py-4">
+  <footer class="p-4 md:py-2">
     <h5>Instituto Tecnológico Superior de Macuspana &copy; 2023</h5>
   </footer>
 
