@@ -1,6 +1,6 @@
 # Proyecto integrador - Simulacion
 
-Proyecto final de la materia Simulacion  
+## Proyecto final de la materia Simulacion  
 
 Este proyecto dispone de una coleccion de juegos:
 * Dados
