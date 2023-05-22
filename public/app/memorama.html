@@ -33,116 +33,58 @@
     <!-- #endregion -->
 
     <main class="container m-auto">
-        <section class="bg-surface flex flex-col space-y-3 justify-center items-center">
-            <button class="my-4 bg-secondary text-onSecondary font-bold p-2 rounded-lg" id="reset-button">Reestablecer
-                Juego</button>
-            <div class="shadow-xl rounded-md drop-shadow-2xl p-8 grid grid-cols-2 gap-5 w-10/12 md:grid-cols-7"
-                id="game-card">
-    
-                <div class="carta-box aspect-square bg-container-tertiary rounded-md">
-                    <div class="carta shadow-lg bg-tertiary">
-                        <div class="cara detras bg-surface rounded-md">
-                            <img src="./assets/memorama/arco-iris.png" />
-                        </div>
-                    </div>
+        <div class="flex flex-col space-y-5 p-5">
+            
+            <button 
+            class="w-10/12 sm:w-1/4 mx-auto bg-primary rounded-md text-onPrimary font-bold text-lg p-1 hover:scale-105 transition-all hover:rounded-xl hover:duration-500 hover:-translate-y-1 hover:bg-gradient-to-r hover:from-primary hover:via-container-secondary hover:to-tertiary hover:text-container-onSecondary active:scale-95 active:translate-y-0 active:duration-100" 
+            id="reset-button">Reiniciar Juego</button>
+
+            <div class="grid gap-5 grid-cols-2 sm:grid-cols-7 w-10/12 mx-auto">
+                <div class="game-card">
+                    <img src="./assets/memorama/arco-iris.png" alt="Card">
                 </div>
-                <div class="carta-box aspect-square bg-container-tertiary rounded-md">
-                    <div class="carta shadow-lg bg-tertiary">
-                        <div class="cara detras bg-surface rounded-md">
-                            <img src="./assets/memorama/arco-iris.png" />
-                        </div>
-                    </div>
+                <div class="game-card">
+                    <img src="./assets/memorama/sol.png" alt="Card">
                 </div>
-                <div class="carta-box aspect-square bg-container-tertiary rounded-md">
-                    <div class="carta shadow-lg bg-tertiary">
-                        <div class="cara detras bg-surface rounded-md">
-                            <img src="./assets/memorama/copo-de-nieve.png" />
-                        </div>
-                    </div>
+                <div class="game-card">
+                    <img src="./assets/memorama/copo-de-nieve.png" alt="Card">
                 </div>
-                <div class="carta-box aspect-square bg-container-tertiary rounded-md">
-                    <div class="carta shadow-lg bg-tertiary">
-                        <div class="cara detras bg-surface rounded-md">
-                            <img src="./assets/memorama/copo-de-nieve.png" />
-                        </div>
-                    </div>
+                <div class="game-card">
+                    <img src="./assets/memorama/viento.png" alt="Card">
                 </div>
-    
-                <div class="carta-box aspect-square bg-container-tertiary rounded-md">
-                    <div class="carta shadow-lg bg-tertiary">
-                        <div class="cara detras bg-surface rounded-md">
-                            <img src="./assets/memorama/nimboestrato.png" />
-                        </div>
-                    </div>
+                <div class="game-card">
+                    <img src="./assets/memorama/sol.png" alt="Card">
                 </div>
-                <div class="carta-box aspect-square bg-container-tertiary rounded-md">
-                    <div class="carta shadow-lg bg-tertiary">
-                        <div class="cara detras bg-surface rounded-md">
-                            <img src="./assets/memorama/nimboestrato.png" />
-                        </div>
-                    </div>
+                <div class="game-card">
+                    <img src="./assets/memorama/arco-iris.png" alt="Card">
                 </div>
-                <div class="carta-box aspect-square bg-container-tertiary rounded-md">
-                    <div class="carta shadow-lg bg-tertiary">
-                        <div class="cara detras bg-surface rounded-md">
-                            <img src="./assets/memorama/noche.png" />
-                        </div>
-                    </div>
+                <div class="game-card">
+                    <img src="./assets/memorama/copo-de-nieve.png" alt="Card">
                 </div>
-                <div class="carta-box aspect-square bg-container-tertiary rounded-md">
-                    <div class="carta shadow-lg bg-tertiary">
-                        <div class="cara detras bg-surface rounded-md">
-                            <img src="./assets/memorama/noche.png" />
-                        </div>
-                    </div>
+                <div class="game-card">
+                    <img src="./assets/memorama/viento.png" alt="Card">
                 </div>
-                <div class="carta-box aspect-square bg-container-tertiary rounded-md">
-                    <div class="carta shadow-lg bg-tertiary">
-                        <div class="cara detras bg-surface rounded-md">
-                            <img src="./assets/memorama/puesta-de-sol.png" />
-                        </div>
-                    </div>
+                <div class="game-card">
+                    <img src="./assets/memorama/puesta-de-sol.png" alt="Card">
                 </div>
-                <div class="carta-box aspect-square bg-container-tertiary rounded-md">
-                    <div class="carta shadow-lg bg-tertiary">
-                        <div class="cara detras bg-surface rounded-md">
-                            <img src="./assets/memorama/puesta-de-sol.png" />
-                        </div>
-                    </div>
+            
+                <div class="game-card">
+                    <img src="./assets/memorama/noche.png" alt="Card">
                 </div>
-                <div class="carta-box aspect-square bg-container-tertiary rounded-md">
-                    <div class="carta shadow-lg bg-tertiary">
-                        <div class="cara detras bg-surface rounded-md">
-                            <img src="./assets/memorama/sol.png" />
-                        </div>
-                    </div>
+                <div class="game-card">
+                    <img src="./assets/memorama/nimboestrato.png" alt="Card">
                 </div>
-    
-                <div class="carta-box aspect-square bg-container-tertiary rounded-md">
-                    <div class="carta shadow-lg bg-tertiary">
-                        <div class="cara detras bg-surface rounded-md">
-                            <img src="./assets/memorama/sol.png" />
-                        </div>
-                    </div>
+                <div class="game-card">
+                    <img src="./assets/memorama/noche.png" alt="Card">
                 </div>
-    
-                <div class="carta-box aspect-square bg-container-tertiary rounded-md">
-                    <div class="carta shadow-lg bg-tertiary">
-                        <div class="cara detras bg-surface rounded-md">
-                            <img src="./assets/memorama/viento.png" />
-                        </div>
-                    </div>
+                <div class="game-card">
+                    <img src="./assets/memorama/nimboestrato.png" alt="Card">
                 </div>
-                <div class="carta-box aspect-square bg-container-tertiary rounded-md">
-                    <div class="carta shadow-lg bg-tertiary">
-                        <div class="cara detras bg-surface rounded-md">
-                            <img src="./assets/memorama/viento.png" />
-                        </div>
-                    </div>
+                <div class="game-card">
+                    <img src="./assets/memorama/puesta-de-sol.png" alt="Card">
                 </div>
-    
             </div>
-        </section>
+        </div>
     </main>
 
     <!-- #region footer-->

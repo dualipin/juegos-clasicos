@@ -1,26 +1,20 @@
-import { shuffleCards } from "./mezclar.js";
+//Mezclar las cartas
+function shuffleCards() {
+	cards.forEach(card => {
+		let randomPos = Math.floor(Math.random() * 12);
+		card.style.order = randomPos;
+	});
+}
 
 //Hacemos una función cuando seleccione un cuadro  
-const cards = document.querySelector('#game-card');
-
-const cardsNodes = cards.childNodes
+const cards = document.querySelectorAll('.game-card');
+shuffleCards()
 
 let hasFlippedCard = false;
 let firstCard, secondCard;
 
-console.log(cardsNodes)
-
-
-cardsNodes.forEach(element=>{
-	//element.style.transform = 'rotateY(180deg)'
-	element.innerHTML = '31231'
-})
-
-document.getElementById('reset-button').style.transform = 'rotateY(180deg)'
-
 function flipCard() {
-	
-	this.style.transform = 'rotateY(180deg)'
+	this.classList.add('visible');
 
 	if (!hasFlippedCard) {
 		hasFlippedCard = true;
@@ -48,11 +42,11 @@ const resetButton = document.querySelector('#reset-button');
 resetButton.addEventListener('click', resetGame);
 
 function resetGame() {
-  cards.forEach(card => {
-    card.classList.remove('visible');
-    card.addEventListener('click', flipCard);
-  });
-  shuffleCards();
+	cards.forEach(card => {
+		card.classList.remove('visible');
+		card.addEventListener('click', flipCard);
+	});
+	shuffleCards();
 }
 
 
