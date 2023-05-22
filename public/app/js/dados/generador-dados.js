@@ -8,7 +8,7 @@ function cara() {
         const div = document.createElement("div");
         div.className = `cara c${i}`;
         const element = document.createElement("img");
-        element.src = `https://dualipin.github.io/proyecto-integrador/public/app/res/dado/c${i}.png`;
+        element.src = `./assets/dado/c${i}.png`;
         div.appendChild(element);
         caras.push(div);
     }

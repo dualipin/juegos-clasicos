@@ -1,5 +1,6 @@
 import { cuadradosMedios } from "./cuadrados-medios.js";
 import { mediaAritmetica, mediana, moda, numerosGenerados } from "./estadistica.js";
+import { dadoGenerador, moverDado } from "./generador-dados.js";
 
 
 const tableroDado = document.getElementById('dados')
@@ -25,6 +26,7 @@ document.getElementById('lanzar').addEventListener('click', (e) => {
  * @param {number} cantidad cantidad de numeros a generar
  */
 function generarNumeros(cantidad) {
+    document.getElementById('dados').innerHTML = ''
 
     const randoms = cuadradosMedios(cantidad)
 
@@ -40,8 +42,8 @@ function generarNumeros(cantidad) {
     limpiarTablaGenerados()
 
     resultados.forEach((x, i) => {
-        // document.getElementById("sectionDado").appendChild(dadoGenerador(i));
-        //moverDado(x, i);
+        document.getElementById("dados").appendChild(dadoGenerador(i));
+        moverDado(x,i)
         switch (x) {
             case 1:
                 c1++;
