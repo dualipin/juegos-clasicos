@@ -1,1 +1,0 @@
-import './pagina/funcionalidad.js'
