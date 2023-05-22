@@ -1,5 +1,4 @@
-import { setJugadores } from "../gato.js"
-import { primerTiro } from "../juego/jugador.js"
+import { jugadores, primerTiro } from "./jugador.js"
 
 const main = document.querySelector('main')//definimos nuestra tag main
 document.getElementById('modal').classList.remove('invisible')
@@ -13,9 +12,9 @@ document.getElementById('seleccionar').addEventListener('click', (e) => {
     document.getElementById('modal').classList.add('invisible', 'hidden')
     const jugadorFigura = document.querySelector('input[name="figura"]:checked').value;
     const computadoraFigura = (jugadorFigura === '⭕') ? '❌' : '⭕'
-
-    const _figurasJugadores = { computadora: computadoraFigura, jugador: jugadorFigura }
-
-    setJugadores(_figurasJugadores)
+    jugadores.jugador = jugadorFigura
+    jugadores.maquina = computadoraFigura
     primerTiro()
+    document.getElementById('turno-turno').innerText = jugadores.jugador
+    console.log(jugadores)
 })

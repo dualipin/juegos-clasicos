@@ -13,14 +13,18 @@
 
 <body>
 
+  <!-- #region header-->
   <header class="bg-white">
-    <img src="./app/res/img/header.png" alt="header itsm" class="rounded-lg sm:w-1/2 w-11/12">
+    <img src="/public/app/assets/img/header.png" alt="header itsm" class="rounded-lg sm:w-8/12 w-11/12">
     <h1 class="text-2xl text-center">Simulacion</h1>
     <nav class="mx-auto py-3">
-      <a href="./">Inicio</a>
-      <a href="./about.html">Sobre nosotros</a>
+      <a class="rounded-md bg-red-600 text-white hover:bg-red-300 hover:text-black mx-2 transition-all"
+        href="/public/">Inicio</a>
+      <a class="rounded-md bg-red-600 text-white hover:bg-red-300 hover:text-black mx-2 transition-all"
+        href="/public/about.html">Sobre nosotros</a>
     </nav>
   </header>
+  <!-- #endregion -->
 
   <main class="m-auto container py-5 px-10 bg-slate-50 w-full rounded-md">
 
@@ -30,9 +34,9 @@
     <section class="grid grid-cols-1 gap-8 md:grid-cols-2 pt-5 lg:grid-cols-4">
 
       <!-- #region Juego de dados-->
-      <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
-        <a href="./app/dados.html">
-          <img alt="Dados" src="./app/res/img/dados.jpg" class="h-56 w-full object-cover" />
+      <article class="hover:rotate-1 hover:scale-105 overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+        <a href="./app/dado.html">
+          <img alt="Dados" src="./app/assets/img/dados.jpg" class="h-56 w-full object-contain" />
 
           <div class="bg-white p-4 sm:p-6">
             <h5 class="block text-xs text-gray-500">
@@ -55,9 +59,9 @@
       <!-- #endregion -->
 
       <!-- #region Juego de Gato-->
-      <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+      <article class="hover:rotate-1 hover:scale-105 overflow-hidden rounded-lg shadow transition hover:shadow-lg">
         <a href="./app/gato.html">
-          <img alt="Office" src="./app/res/img/gato.jpg" class="h-56 w-full object-cover" />
+          <img alt="Office" src="./app/assets/img/gato.jpg" class="h-56 w-full object-contain" />
 
           <div class="bg-white p-4 sm:p-6">
             <h5 class="block text-xs text-gray-500">
@@ -79,9 +83,9 @@
       <!-- #endregion -->
 
       <!-- #region Memorama-->
-      <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+      <article class="hover:rotate-1 hover:scale-105 overflow-hidden rounded-lg shadow transition hover:shadow-lg">
         <a href="./app/memorama.html">
-          <img alt="Office" src="./app/res/img/memorama.jpg" class="h-56 w-full object-cover" />
+          <img alt="Office" src="./app/assets/img/memorama.jpg" class="h-56 w-full object-cover" />
 
           <div class="bg-white p-4 sm:p-6">
             <h5 class="block text-xs text-gray-500">
@@ -103,9 +107,9 @@
       <!-- #endregion -->
 
       <!-- #region Adivina el numero-->
-      <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+      <article class="hover:rotate-1 hover:scale-105 overflow-hidden rounded-lg shadow transition hover:shadow-lg">
         <a href="./app/adivina-numero.html">
-          <img alt="Office" src="./app/res/img/numeros.jpg" class="h-56 w-full object-cover" />
+          <img alt="Office" src="./app/assets/img/numeros.png" class="h-56 w-full object-cover" />
 
           <div class="bg-white p-4 sm:p-6">
             <time datetime="2022-10-10" class="block text-xs text-gray-500">
@@ -130,9 +134,11 @@
 
   </main>
 
+  <!-- #region Footer-->
   <footer class="p-4 md:py-2">
     <h5>Instituto Tecnológico Superior de Macuspana &copy; 2023</h5>
   </footer>
+  <!-- #endregion -->
 
 </body>
 

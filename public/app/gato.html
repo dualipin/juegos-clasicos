@@ -14,11 +14,11 @@
 <body>
     <!-- #region header-->
     <header class="bg-white">
-        <img src="/public/app/res/img/header.png" alt="header itsm" class="rounded-lg sm:w-1/2 w-11/12">
+        <img src="/public/app/assets/img/header.png" alt="header itsm" class="rounded-lg sm:w-8/12 w-11/12">
         <h1 class="text-2xl text-center">Simulacion - Gato - Tic Tac Toe</h1>
         <nav class="mx-auto py-3">
-            <a href="/public/">Inicio</a>
-            <a href="/public/about.html">Sobre nosotros</a>
+            <a class="rounded-md bg-red-600 text-white hover:bg-red-300 hover:text-black mx-2 transition-all" href="/public/">Inicio</a>
+            <a class="rounded-md bg-red-600 text-white hover:bg-red-300 hover:text-black mx-2 transition-all" href="/public/about.html">Sobre nosotros</a>
         </nav>
     </header>
     <!-- #endregion -->
@@ -26,29 +26,23 @@
     <main class="grid container mx-auto h-full pointer-events-none blur-sm">
         <!-- #region Juego cabecera-->
         <section>
-            <h2 class="font-extrabold text-2xl text-center align-bottom transition-colors animate-pulse text-red-700">Turno de "<span id="turno-turno"></span>"
-            </h2>
-            <h3 class="text-center col-span-2 text-xl font-semibold">Conteo de veces ganadas</h3>
-        
-            <section class="flex justify-center space-x-10">
-                <h4>Jugador "<span id="jugador"></span>": <span id="jugador-ganadas">0</span> ganadas</h4>
-                <h4>Maquina "<span id="maquina"></span>": <span id="maquina-ganadas">0</span> ganadas</h4>
-            </section>
-        
+            <h2 class="font-extrabold text-3xl text-center align-bottom transition-colors animate-pulse text-red-700">Turno de "<span id="turno-turno"></span>"
+            </h2> 
+            <h3 id="estado-juego" class="text-2xl text-center"></h3>       
         </section>
         <!-- #endregion -->
 
         <!-- #region Juego-->
-        <section  class="w-9/12 sm:w-2/5 md:w-2/6 lg:1/4 grid grid-cols-3 gap-2 mx-auto aspect-square p-10" id="juego-gato">
-            <button id="1" class="hover:bg-blue-200 active:bg-gradient-to-r active:from-blue-500 active:transition-all transition-all duration-300 active:duration-1000 active:to-blue-200 text-white rounded-md cursor-pointer bg-blue-100 aspect-square text-6xl font-bold align-middle text-center"></button>
-            <button id="2" class="hover:bg-blue-200 active:bg-gradient-to-r active:from-blue-500 active:transition-all transition-all duration-300 active:duration-1000 active:to-blue-200 text-white rounded-md cursor-pointer bg-blue-100 aspect-square text-6xl font-bold align-middle text-center"></button>
-            <button id="3" class="hover:bg-blue-200 active:bg-gradient-to-r active:from-blue-500 active:transition-all transition-all duration-300 active:duration-1000 active:to-blue-200 text-white rounded-md cursor-pointer bg-blue-100 aspect-square text-6xl font-bold align-middle text-center"></button>
-            <button id="4" class="hover:bg-blue-200 active:bg-gradient-to-r active:from-blue-500 active:transition-all transition-all duration-300 active:duration-1000 active:to-blue-200 text-white rounded-md cursor-pointer bg-blue-100 aspect-square text-6xl font-bold align-middle text-center"></button>
-            <button id="5" class="hover:bg-blue-200 active:bg-gradient-to-r active:from-blue-500 active:transition-all transition-all duration-300 active:duration-1000 active:to-blue-200 text-white rounded-md cursor-pointer bg-blue-100 aspect-square text-6xl font-bold align-middle text-center"></button>
-            <button id="6" class="hover:bg-blue-200 active:bg-gradient-to-r active:from-blue-500 active:transition-all transition-all duration-300 active:duration-1000 active:to-blue-200 text-white rounded-md cursor-pointer bg-blue-100 aspect-square text-6xl font-bold align-middle text-center"></button>
-            <button id="7" class="hover:bg-blue-200 active:bg-gradient-to-r active:from-blue-500 active:transition-all transition-all duration-300 active:duration-1000 active:to-blue-200 text-white rounded-md cursor-pointer bg-blue-100 aspect-square text-6xl font-bold align-middle text-center"></button>
-            <button id="8" class="hover:bg-blue-200 active:bg-gradient-to-r active:from-blue-500 active:transition-all transition-all duration-300 active:duration-1000 active:to-blue-200 text-white rounded-md cursor-pointer bg-blue-100 aspect-square text-6xl font-bold align-middle text-center"></button>
-            <button id="9" class="hover:bg-blue-200 active:bg-gradient-to-r active:from-blue-500 active:transition-all transition-all duration-300 active:duration-1000 active:to-blue-200 text-white rounded-md cursor-pointer bg-blue-100 aspect-square text-6xl font-bold align-middle text-center"></button>
+        <section  class="tablero w-9/12 sm:w-2/5 lg:w-1/3 transition-all duration-500 md:5/12 grid grid-cols-3 gap-2 mx-auto aspect-square p-10" id="juego-gato">
+            <button id="p1" class="posicion hover:bg-blue-200 active:bg-gradient-to-r active:from-blue-500 active:transition-all transition-all duration-300 active:duration-1000 active:to-blue-200 text-white rounded-md cursor-pointer bg-blue-100 aspect-square text-6xl font-bold align-middle text-center"></button>
+            <button id="p2" class="posicion hover:bg-blue-200 active:bg-gradient-to-r active:from-blue-500 active:transition-all transition-all duration-300 active:duration-1000 active:to-blue-200 text-white rounded-md cursor-pointer bg-blue-100 aspect-square text-6xl font-bold align-middle text-center"></button>
+            <button id="p3" class="posicion hover:bg-blue-200 active:bg-gradient-to-r active:from-blue-500 active:transition-all transition-all duration-300 active:duration-1000 active:to-blue-200 text-white rounded-md cursor-pointer bg-blue-100 aspect-square text-6xl font-bold align-middle text-center"></button>
+            <button id="p4" class="posicion hover:bg-blue-200 active:bg-gradient-to-r active:from-blue-500 active:transition-all transition-all duration-300 active:duration-1000 active:to-blue-200 text-white rounded-md cursor-pointer bg-blue-100 aspect-square text-6xl font-bold align-middle text-center"></button>
+            <button id="p5" class="posicion hover:bg-blue-200 active:bg-gradient-to-r active:from-blue-500 active:transition-all transition-all duration-300 active:duration-1000 active:to-blue-200 text-white rounded-md cursor-pointer bg-blue-100 aspect-square text-6xl font-bold align-middle text-center"></button>
+            <button id="p6" class="posicion hover:bg-blue-200 active:bg-gradient-to-r active:from-blue-500 active:transition-all transition-all duration-300 active:duration-1000 active:to-blue-200 text-white rounded-md cursor-pointer bg-blue-100 aspect-square text-6xl font-bold align-middle text-center"></button>
+            <button id="p7" class="posicion hover:bg-blue-200 active:bg-gradient-to-r active:from-blue-500 active:transition-all transition-all duration-300 active:duration-1000 active:to-blue-200 text-white rounded-md cursor-pointer bg-blue-100 aspect-square text-6xl font-bold align-middle text-center"></button>
+            <button id="p8" class="posicion hover:bg-blue-200 active:bg-gradient-to-r active:from-blue-500 active:transition-all transition-all duration-300 active:duration-1000 active:to-blue-200 text-white rounded-md cursor-pointer bg-blue-100 aspect-square text-6xl font-bold align-middle text-center"></button>
+            <button id="p9" class="posicion hover:bg-blue-200 active:bg-gradient-to-r active:from-blue-500 active:transition-all transition-all duration-300 active:duration-1000 active:to-blue-200 text-white rounded-md cursor-pointer bg-blue-100 aspect-square text-6xl font-bold align-middle text-center"></button>
         </section>
         <!-- #endregion -->
 
@@ -64,7 +58,7 @@
 
     <!-- #region Ventana modal-->
     <section id="modal"
-        class="invisible grid transition-all duration-700 w-10/12 md:w-6/12 lg:w-2/5 bg-slate-100 z-10 rounded-2xl absolute shadow-xl h-80 m-auto left-0 right-0 bottom-0 top-0 shadow-blue-950 backdrop-blur-sm container">
+        class="invisible grid absolute m-auto top-40">
         <h5 class="py-3 text-center text-2xl">Seleccione su favorito</h5>
         <article class="grid grid-cols-3 gap-8 p-10 ">
     
@@ -81,6 +75,7 @@
     </section>
     <!-- #endregion -->
    
+
     <!-- #region footer-->
     <footer class="p-4 md:py-2">
         <h5>Instituto Tecnológico Superior de Macuspana &copy; 2023</h5>
@@ -88,7 +83,8 @@
     <!-- #endregion -->
       
     <!-- #region Scripts-->
-    <script type="module" src="../src/js/gato/gato.js"></script>
+    <script type="module" src="./js/tic-tac-toe/tic-tac.js"></script>
+    <!--script type="module" src="../src/js/gato/gato.js"></script>
     <!-- #endregion -->
 </body>
 

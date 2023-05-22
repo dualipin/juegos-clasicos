@@ -7,224 +7,168 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/main.css">
     <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/dado/dado.css">
     <title>Juego de Dado</title>
 </head>
 
 <body>
 
+    <!-- #region header-->
     <header class="bg-white">
-        <img src="./res/img/header.png" alt="header itsm" class="rounded-lg sm:w-1/2 w-11/12">
-        <h1 class="text-2xl text-center">Simulacion - Dado Aleatorio</h1>
+        <img src="/public/app/res/img/header.png" alt="header itsm" class="rounded-lg sm:w-1/2 w-11/12">
+        <h1 class="text-2xl text-center">Simulacion - Gato - Tic Tac Toe</h1>
         <nav class="mx-auto py-3">
-            <a href="/public/">Inicio</a>
-            <a href="/public/about.html">Sobre nosotros</a>
+            <a class="rounded-md bg-red-600 text-white hover:bg-red-300 hover:text-black mx-2 transition-all" href="/public/">Inicio</a>
+            <a class="rounded-md bg-red-600 text-white hover:bg-red-300 hover:text-black mx-2 transition-all" href="/public/about.html">Sobre nosotros</a>
         </nav>
     </header>
+    <!-- #endregion -->
 
-    <main class="flex-wrap md:flex justify-center">
+    <main>
 
-        <aside class="">
+      
 
-            <form>
-
-
-                <label for="Quantity" class="text-lg w-full text-center"> Dados a generar </label>
-
-                <div class="flex items-center gap-1 my-5">
-                    <button type="button" class="h-10 w-10 leading-10 text-gray-600 transition hover:opacity-75"
-                        id="btn-menos">
-                        &minus;
-                    </button>
-
-                    <input type="number" id="Quantity" value="1" class="h-10 w-24 rounded border-gray-200 sm:text-sm" />
-
-                    <button type="button" class="h-10 w-10 leading-10 text-gray-600 transition hover:opacity-75"
-                        id="btn-mas">
-                        &plus;
-                    </button>
-                </div>
-
-                <button type="button" id="tirar-dados"
-                    class="w-full rounded bg-indigo-600 px-8 py-3 text-sm font-medium text-white transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-indigo-500">Tirar
-                    dados</button>
-            </form>
-
-
-        </aside>
-
-
-
-        <div class="overflow-x-auto rounded-lg border border-gray-200">
-            <table class="min-w-full divide-y-2 divide-gray-200 bg-white text-sm">
-              <thead class="ltr:text-left rtl:text-right">
-                <tr>
-                  <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-                    Name
-                  </th>
-                  <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-                    Date of Birth
-                  </th>
-                  <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-                    Role
-                  </th>
-                  <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-                    Salary
-                  </th>
-                </tr>
-              </thead>
-          
-              <tbody class="divide-y divide-gray-200">
-                <tr>
-                  <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-                    John Doe
-                  </td>
-                  <td class="whitespace-nowrap px-4 py-2 text-gray-700">24/05/1995</td>
-                  <td class="whitespace-nowrap px-4 py-2 text-gray-700">Web Developer</td>
-                  <td class="whitespace-nowrap px-4 py-2 text-gray-700">$120,000</td>
-                </tr>
-          
-                <tr>
-                  <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-                    Jane Doe
-                  </td>
-                  <td class="whitespace-nowrap px-4 py-2 text-gray-700">04/11/1980</td>
-                  <td class="whitespace-nowrap px-4 py-2 text-gray-700">Web Designer</td>
-                  <td class="whitespace-nowrap px-4 py-2 text-gray-700">$100,000</td>
-                </tr>
-          
-                <tr>
-                  <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-                    Gary Barlow
-                  </td>
-                  <td class="whitespace-nowrap px-4 py-2 text-gray-700">24/05/1995</td>
-                  <td class="whitespace-nowrap px-4 py-2 text-gray-700">Singer</td>
-                  <td class="whitespace-nowrap px-4 py-2 text-gray-700">$20,000</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
 
 
         <div class="menu">
-           
-
-            <section class="metodo">
-                <table>
-                    <caption>
-                        Estadistica
-                    </caption>
-                    <thead>
-                        <tr>
-                            <th>Media</th>
-                            <th>Mediana</th>
-                            <th>Moda</th>
-                        </tr>
-                    </thead>
-                    <tbody id="Estadistica">
-                        <tr>
-                            <td id="media"></td>
-                            <td id="mediana"></td>
-                            <td id="moda"></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-            <section class="numeros-generados"></section>
+          <nav>
+            <h2>Seleccione un metodo de generación</h2>
+            <form>
+              
+              <label for="gen"
+                >Numeros a generar:<input type="number" name="gen" id="gen" />
+              </label>
+            </form>
+            <button class="bg-slate-400" onclick="generarNumeros()">Productos medios</button>
+          </nav>
+  
+          <section class="metodo">
+            <table>
+              <caption>
+                Estadistica
+              </caption>
+              <thead>
+                <tr>
+                  <th>Media</th>
+                  <th>Mediana</th>
+                  <th>Moda</th>
+                </tr>
+              </thead>
+              <tbody id="Estadistica">
+                <tr>
+                  <td id="media"></td>
+                  <td id="mediana"></td>
+                  <td id="moda"></td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <section class="numeros-generados"></section> 
         </div>
-
+  
         <section class="dados" id="sectionDado">
-
+          <!--div class="content">
+            <div id="dado">
+              <div class="cara c1"><img src="img/c1.png" alt="" /></div>
+              <div class="cara c2"><img src="img/c2.png" alt="" /></div>
+              <div class="cara c3"><img src="img/c3.png" alt="" /></div>
+              <div class="cara c4"><img src="img/c4.png" alt="" /></div>
+              <div class="cara c5"><img src="img/c5.png" alt="" /></div>
+              <div class="cara c6"><img src="img/c6.png" alt="" /></div>
+            </div>
+          </div-->
         </section>
-
+  
         <aside>
-            <h2>Valores Generados</h2>
-            <section class="mas-generado-tabla">
-                <table>
-                    <caption>
-                        Mas repetido
-                    </caption>
-                    <thead>
-                        <tr>
-                            <th>Cara</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td id="caraMas"></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-            <section class="generados-tabla">
-                <table>
-                    <caption>
-                        Valores
-                    </caption>
-                    <thead>
-                        <th>Cara</th>
-                        <th>Veces</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <div class="cara-tabla"><img src="img/c1.png" alt="" /></div>
-                            </td>
-                            <td id="c1"></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="cara-tabla"><img src="img/c2.png" alt="" /></div>
-                            </td>
-                            <td id="c2"></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="cara-tabla"><img src="img/c3.png" alt="" /></div>
-                            </td>
-                            <td id="c3"></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="cara-tabla"><img src="img/c4.png" alt="" /></div>
-                            </td>
-                            <td id="c4"></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="cara-tabla"><img src="img/c5.png" alt="" /></div>
-                            </td>
-                            <td id="c5"></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="cara-tabla"><img src="img/c6.png" alt="" /></div>
-                            </td>
-                            <td id="c6"></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
+          <h2>Valores Generados</h2>
+          <section class="mas-generado-tabla">
+            <table>
+              <caption>
+                Mas repetido
+              </caption>
+              <thead>
+                <tr>
+                  <th>Cara</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td id="caraMas"></td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <section class="generados-tabla">
+            <table>
+              <caption>
+                Valores
+              </caption>
+              <thead>
+                <th>Cara</th>
+                <th>Veces</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="cara-tabla"><img src="./res/dado/c1.png" alt="" /></div>
+                  </td>
+                  <td id="c1"></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="cara-tabla"><img src="./res/dado/c2.png" alt="" /></div>
+                  </td>
+                  <td id="c2"></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="cara-tabla"><img src="./res/dado/c3.png" alt="" /></div>
+                  </td>
+                  <td id="c3"></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="cara-tabla"><img src="./res/dado/c4.png" alt="" /></div>
+                  </td>
+                  <td id="c4"></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="cara-tabla"><img src="./res/dado/c5.png" alt="" /></div>
+                  </td>
+                  <td id="c5"></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="cara-tabla"><img src="./res/dado/c6.png" alt="" /></div>
+                  </td>
+                  <td id="c6"></td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
         </aside>
         <div class="tabla">
-            <table>
-                <thead>
-                    <th>Numeros generados</th>
-                    <th>Valor Numero</th>
-                </thead>
-                <tbody id="valoresgenerados">
-
-                </tbody>
-            </table>
+          <table>
+            <thead>
+              <th>Numeros generados</th>
+              <th>Valor Numero</th>
+            </thead>
+            <tbody id="valoresgenerados">
+              
+            </tbody>
+          </table>
         </div>
-    </main>
+      </main>
 
+      <!-- #region footer-->
     <footer class="p-4 md:py-2">
         <h5>Instituto Tecnológico Superior de Macuspana &copy; 2023</h5>
     </footer>
-
+    <!-- #endregion -->
 
     <!-- #region Scripts-->
-    <script type="module" src="../src/js/dado/dado.js"></script>
+    <script src="../src/js/dados/cuadrados-medios.js"></script>
     <!-- #endregion -->
 </body>
 
