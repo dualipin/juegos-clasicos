@@ -35,6 +35,9 @@ module.exports = {
       animation: {
         'ping-slow': 'ping 1.5s linear infinite',
 
+      },
+      rotate:{
+          190: 'transform: rotateY(180deg)'
       }
     },
   },

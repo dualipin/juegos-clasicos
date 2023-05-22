@@ -1,18 +1,26 @@
-//Mezclar las cartas
-function shuffleCards() {
-    cards.forEach(card => {
-      let randomPos = Math.floor(Math.random() * 12);
-      card.style.order = randomPos;
-    });
-  }
+import { shuffleCards } from "./mezclar.js";
+
 //Hacemos una función cuando seleccione un cuadro  
-const cards = document.querySelectorAll('.game-card');
+const cards = document.querySelector('#game-card');
+
+const cardsNodes = cards.childNodes
 
 let hasFlippedCard = false;
 let firstCard, secondCard;
 
+console.log(cardsNodes)
+
+
+cardsNodes.forEach(element=>{
+	//element.style.transform = 'rotateY(180deg)'
+	element.innerHTML = '31231'
+})
+
+document.getElementById('reset-button').style.transform = 'rotateY(180deg)'
+
 function flipCard() {
-	this.classList.add('visible');
+	
+	this.style.transform = 'rotateY(180deg)'
 
 	if (!hasFlippedCard) {
 		hasFlippedCard = true;
