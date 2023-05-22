@@ -70,11 +70,8 @@ export const moverA = (x,y)=>{
 
     tablero[x][y] = jugardorActual
 
-    console.log(tablero[x][y])
-
     posicionTablero.innerHTML = jugardorActual
 
-    console.log(jugardorActual + " vv")
 
     if(verificarGanador(jugardorActual)){
         //accion de ganador
