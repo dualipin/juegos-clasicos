@@ -14,7 +14,7 @@ document.getElementById('lanzar').addEventListener('click', (e) => {
     const generar = document.getElementById('generar').value
     const error = document.getElementById('error')
     if (generar == '') error.innerText = 'Rellene el campo'
-    else if (generar < 0) error.innerText = 'El valor no puede ser menor a 0'
+    else if (generar < 1) error.innerText = 'El valor no puede ser menor a 0'
     else {
         error.innerText = ''
         generarNumeros(generar)
