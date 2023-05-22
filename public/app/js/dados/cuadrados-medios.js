@@ -1,4 +1,11 @@
-export function cuadradosMedios(semilla, cantidad) {
+/**
+ * Metodo que genera una lista de numeros pseudoaeatorios
+ * @param {number} cantidad Cantidad de numeros a generar
+ * @returns lista de numeros aleatorios
+ */
+export function cuadradosMedios(cantidad) {
+  let semilla = Math.random() * 10000
+
   let resultados = [];
 
   // Generar la secuencia

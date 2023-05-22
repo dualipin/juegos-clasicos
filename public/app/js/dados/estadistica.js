@@ -1,4 +1,30 @@
 /**
+ * Metodo que convierte a posicion de dados
+ * @param {Array} arreglo de numeros
+ * @returns lista de posicion para los dados
+ */
+export function numerosGenerados(arreglo) {
+    const resultados = [];
+    arreglo.forEach((random) => {
+        if (random >= 0 && random <= 0.16) {
+            resultados.push(1);
+        } else if (random >= 0.16 && random <= 0.33) {
+            resultados.push(2);
+        } else if (random >= 0.33 && random <= 0.5) {
+            resultados.push(3);
+        } else if (random >= 0.5 && random <= 0.76) {
+            resultados.push(4);
+        } else if (random >= 0.76 && random < 0.93) {
+            resultados.push(5);
+        } else if (random > 0.93 && random < 1) {
+            resultados.push(6);
+        }
+    });
+
+    return resultados;
+}
+
+/**
  * Metodo que calcula la moda
  * @param {Array} listaM Recibe una lista de metodos
  * @returns moda
@@ -31,7 +57,7 @@ export function moda(listaM) {
  * @param {Array} lista de numeros que se desea calcular la mediana
  * @returns Mediana
  */
-export function calcularMediana(lista) {
+export function mediana(lista) {
     const listaOrdenada = lista.sort(function (primerElemento, segundoElemento) {
         return primerElemento - segundoElemento;
     });
@@ -52,7 +78,7 @@ export function calcularMediana(lista) {
         const elemento1 = listaOrdenada[mitadLista - 1];
         const elemento2 = listaOrdenada[mitadLista];
 
-        const promedioElemento1y2 = calcularMediaAritmetica([elemento1, elemento2]);
+        const promedioElemento1y2 = mediaAritmetica([elemento1, elemento2]);
 
         mediana = promedioElemento1y2;
     } else {
@@ -66,7 +92,7 @@ export function calcularMediana(lista) {
  * @param {Array} lista lista de numeros
  * @returns media aritmetica
  */
-export function calcularMediaAritmetica(lista) {
+export function mediaAritmetica(lista) {
     const sumaLista = lista.reduce(function (valorAcumulado = 0, nuevoElemento) {
         return valorAcumulado + nuevoElemento;
     });

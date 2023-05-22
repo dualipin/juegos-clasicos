@@ -8,26 +8,35 @@
     <link rel="shortcut icon" href="./res/img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="./style/index.css">
     <link rel="stylesheet" href="./style/main.css">
-    
+
     <title>Adivina el numero</title>
 </head>
 
 <body>
-   <!-- #region header-->
-   <header class="bg-white">
-    <img src="/public/app/res/img/header.png" alt="header itsm" class="rounded-lg sm:w-1/2 w-11/12">
-    <h1 class="text-2xl text-center">Simulacion - Gato - Tic Tac Toe</h1>
-    <nav class="mx-auto py-3">
-        <a class="rounded-md bg-red-600 text-white hover:bg-red-300 hover:text-black mx-2 transition-all" href="/public/">Inicio</a>
-        <a class="rounded-md bg-red-600 text-white hover:bg-red-300 hover:text-black mx-2 transition-all" href="/public/about.html">Sobre nosotros</a>
-    </nav>
-</header>
-<!-- #endregion -->
+    <!-- #region header-->
+    <header class="bg-white">
+        <img src="../app/assets/img/header.png" alt="header itsm" class="rounded-lg sm:w-8/12 w-11/12">
+        <h1 class="text-2xl text-center">Simulacion - Gato - Tic Tac Toe</h1>
+        <nav class="mx-auto py-3">
+            <ul class="flex space-x-3">
+                <li
+                    class="hover:bg-gradient-to-r hover:from-container-primary hover:text-container-onPrimary hover:to-container-tertiary bg-tertiary text-onTertiary shadow-sm rounded-md p-1 hover: scale-105 hover:rounded-lg hover:-translate-y-1 active:scale-95 active:translate-y-1 transition">
+                    <a href="../">Inicio</a>
+                </li>
+                <li
+                    class="hover:bg-gradient-to-r hover:from-container-primary hover:text-container-onPrimary hover:to-container-tertiary bg-tertiary text-onTertiary shadow-sm rounded-md p-1 hover: scale-105 hover:rounded-lg hover:-translate-y-1 active:scale-95 active:translate-y-1 transition">
+                    <a href="../about.html">Acerca de</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- #endregion -->
 
     <main class="m-auto">
         <h2 class="text-2xl font-extrabold text-center pt-10">Adivina el número secreto (1 a 100) en 10 intentos.</h2>
         <div class="flex flex-col container items-center">
-            <input class="w-10/12 sm:w-4/12 rounded-md my-5" type="number" id="guess-input" placeholder="Ingresa un número">
+            <input class="w-10/12 sm:w-4/12 rounded-md my-5" type="number" id="guess-input"
+                placeholder="Ingresa un número">
             <div class="container flex justify-center space-x-5 w-full">
                 <button
                     class="my-1 rounded-md py-3 px-2 bg-slate-500 hover:bg-gradient-to-r hover:from-red-400 hover:rounded-lg hover:scale-105 transition-all active:bg-slate-700 font-bold text-white cursor-pointer"
