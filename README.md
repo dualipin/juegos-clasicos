@@ -1,4 +1,4 @@
-# Juegos Clasicos
+# Juegos Clásicos
 
 [Enlace a los juegos](https://dualipin.github.io/juegos-clasicos/public/)
 
