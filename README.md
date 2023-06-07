@@ -1,6 +1,8 @@
-# Proyecto integrador - Simulacion
+# Juegos Clasicos
 
-## Proyecto final de la materia Simulacion  
+[Enlace a los juegos](https://dualipin.github.io/juegos-clasicos/public/)
+
+## Proyecto final: "Entrega de proyectos final de semestre"
 
 Este proyecto dispone de una coleccion de juegos:
 * Dados
