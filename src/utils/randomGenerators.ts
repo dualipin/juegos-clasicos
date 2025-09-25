@@ -88,4 +88,13 @@ export class GameRandomizers {
     
     return min + (randomValue % range)
   }
+
+  /**
+   * Generador para Piedra, Papel o Tijera - distribución perfectamente uniforme
+   */
+  static generateRockPaperScissors(): 'rock' | 'paper' | 'scissors' {
+    const choices: ('rock' | 'paper' | 'scissors')[] = ['rock', 'paper', 'scissors']
+    const randomIndex = generateRandomIndex(3)
+    return choices[randomIndex]
+  }
 }

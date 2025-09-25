@@ -32,6 +32,14 @@ const games = [
         description: 'Adivina números generados con distribución perfectamente uniforme usando técnicas criptográficas avanzadas.',
         image: '/numeros.png',
         path: '/adivina-numero'
+    },
+    {
+        id: 'piedra-papel-tijera',
+        title: 'Piedra, Papel o Tijera',
+        method: '🤖 IA con Decisiones Aleatorias',
+        description: 'Enfréntate a una IA que toma decisiones completamente impredecibles usando números criptográficamente seguros.',
+        image: '/piedra-papel-tijera.svg',
+        path: '/piedra-papel-tijera'
     }
 ]
 
@@ -46,7 +54,7 @@ const Home = () => {
                 </p>
             </div>
 
-            <section className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+            <section className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
                 {games.map((game, index) => (
                     <GameCard key={game.id} {...game} index={index} />
                 ))}

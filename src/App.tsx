@@ -6,6 +6,7 @@ import DadosGame from './components/games/Dados/DadosGame'
 import GatoGame from './components/games/Gato/GatoGame'
 import MemoramaGame from './components/games/Memorama/MemoramaGame'
 import AdivinaNumeroGame from './components/games/AdivinaNumero/AdivinaNumeroGame'
+import RockPaperScissorsGame from './components/games/RockPaperScissors/RockPaperScissorsGame'
 
 const router = createBrowserRouter(
   [
@@ -19,6 +20,7 @@ const router = createBrowserRouter(
         { path: 'gato', element: <GatoGame /> },
         { path: 'memorama', element: <MemoramaGame /> },
         { path: 'adivina-numero', element: <AdivinaNumeroGame /> },
+        { path: 'piedra-papel-tijera', element: <RockPaperScissorsGame /> },
       ]
     }
   ]

@@ -36,3 +36,20 @@ export interface RandomStats {
   distribution: number[]
   uniformity: number
 }
+
+export interface RockPaperScissorsGame {
+  playerChoice: 'rock' | 'paper' | 'scissors' | null
+  computerChoice: 'rock' | 'paper' | 'scissors' | null
+  result: 'win' | 'lose' | 'tie' | null
+  playerScore: number
+  computerScore: number
+  round: number
+}
+
+export interface GameHistory {
+  round: number
+  playerChoice: 'rock' | 'paper' | 'scissors'
+  computerChoice: 'rock' | 'paper' | 'scissors'
+  result: 'win' | 'lose' | 'tie'
+  timestamp: number
+}
