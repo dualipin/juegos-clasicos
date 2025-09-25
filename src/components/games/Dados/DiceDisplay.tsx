@@ -38,7 +38,7 @@ const DiceDisplay = ({ value, index, isAnimating = false, showResult = false }: 
       <div className={`text-lg font-bold transition-all duration-700 px-3 py-1 rounded-full ${
         isAnimating 
           ? 'text-accent-500 animate-pulse bg-accent-100 dark:bg-accent-900' 
-          : `text-white bg-gradient-to-r ${getDiceColor(value)} shadow-lg`
+          : `text-white bg-linear-to-r ${getDiceColor(value)} shadow-lg`
       }`}>
         {isAnimating ? '🎯' : value}
       </div>

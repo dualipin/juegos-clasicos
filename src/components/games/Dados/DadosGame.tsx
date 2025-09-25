@@ -130,7 +130,7 @@ const DadosGame = () => {
           <h2 className="text-2xl font-bold mb-6 text-card-foreground">🎯 Resultados</h2>
           
           {isRolling && countdown > 0 && (
-            <div className="card p-8 text-center mb-6 bg-gradient-to-br from-primary-500 to-accent-500 animate-slide-in-down">
+            <div className="card p-8 text-center mb-6 bg-linear-to-br from-primary-500 to-accent-500 animate-slide-in-down">
               <div className="text-6xl font-bold text-white animate-heartbeat mb-2">
                 {countdown}
               </div>

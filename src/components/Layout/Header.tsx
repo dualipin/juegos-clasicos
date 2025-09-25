@@ -10,13 +10,13 @@ const Header = () => {
   ]
 
   return (
-    <header className="bg-card border-b border-border shadow-soft sticky top-0 z-50 backdrop-blur-sm">
+    <header className="bg-card border-b border-border shadow-soft sticky top-0 z-50 backdrop-blur-xs">
       <div className="container mx-auto px-4 py-4">
         {/* Header content */}
         <div className="flex items-center justify-between">
           {/* Logo/Title */}
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-primary-500 to-accent-500 rounded-lg flex items-center justify-center hover-glow transition-all duration-300 hover:scale-110">
+            <div className="w-8 h-8 bg-linear-to-br from-primary-500 to-accent-500 rounded-lg flex items-center justify-center hover-glow transition-all duration-300 hover:scale-110">
               <span className="text-white font-bold text-lg animate-wiggle">🎮</span>
             </div>
             <h1 className="text-xl sm:text-2xl font-bold text-gradient hover:scale-105 transition-transform duration-300">
@@ -36,8 +36,8 @@ const Header = () => {
                         px-4 py-2 rounded-lg font-medium transition-all duration-300
                         hover:scale-105 active:scale-95 hover-glow
                         ${location.pathname === path
-                          ? 'bg-primary-500 text-white shadow-glow animate-pulse'
-                          : 'text-card-foreground hover:bg-secondary-100 dark:hover:bg-secondary-800 hover:-translate-y-0.5'
+                          ? 'bg-primary-500 text-white shadow-glow animate-pulse hover:text-white'
+                          : 'text-card-foreground hover:text-white hover:bg-muted dark:hover:bg-secondary-700 hover:-translate-y-0.5'
                         }
                       `}
                     >
@@ -69,7 +69,7 @@ const Header = () => {
                     hover:scale-105 active:scale-95 hover-glow
                     ${location.pathname === path
                       ? 'bg-primary-500 text-white shadow-glow animate-pulse'
-                      : 'text-card-foreground hover:bg-secondary-100 dark:hover:bg-secondary-800 hover:-translate-y-0.5'
+                      : 'text-card-foreground hover:text-white hover:bg-muted dark:hover:bg-secondary-700 hover:-translate-y-0.5'
                     }
                   `}
                 >

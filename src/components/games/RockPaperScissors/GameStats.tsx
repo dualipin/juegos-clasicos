@@ -107,7 +107,7 @@ const GameStats = ({ gameState, history }: GameStatsProps) => {
           <h3 className="font-semibold mb-4 text-card-foreground">📝 Historial Reciente</h3>
           <div className="space-y-2 max-h-48 overflow-y-auto">
             {history.slice(0, 10).map((game) => (
-              <div key={game.timestamp} className="flex items-center justify-between text-sm p-2 rounded bg-muted/50">
+              <div key={game.timestamp} className="flex items-center justify-between text-sm p-2 rounded-sm bg-muted/50">
                 <span className="flex items-center gap-2">
                   <span className="text-xs text-muted-foreground">R{game.round}</span>
                   <span>{game.playerChoice === 'rock' ? '🪨' : game.playerChoice === 'paper' ? '📄' : '✂️'}</span>

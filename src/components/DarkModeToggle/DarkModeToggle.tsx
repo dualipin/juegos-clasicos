@@ -28,8 +28,8 @@ const DarkModeToggle = () => {
       {/* Toggle circle */}
       <span
         className={`
-          pointer-events-none inline-block h-6 w-6 transform rounded-full bg-white shadow-lg 
-          ring-0 transition-all duration-300 ease-in-out flex items-center justify-center
+          pointer-events-none flex h-6 w-6 transform rounded-full bg-card shadow-lg 
+          ring-0 transition-all duration-300 ease-in-out items-center justify-center
           ${isDark ? 'translate-x-6' : 'translate-x-1'}
         `}
       >

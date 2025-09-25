@@ -127,7 +127,7 @@ const MemoramaGame = () => {
         </div>
 
         {gameWon && (
-          <div className="card p-6 text-center bg-gradient-to-br from-success-500 to-primary-500 animate-slide-in-down">
+          <div className="card p-6 text-center bg-linear-to-br from-success-500 to-primary-500 animate-slide-in-down">
             <div className="text-4xl mb-2 animate-heartbeat">🎉</div>
             <h2 className="text-2xl font-bold text-white mb-2 animate-bounce-in">
               ¡Felicidades!
@@ -151,7 +151,7 @@ const MemoramaGame = () => {
                 onClick={() => handleCardClick(card.id)}
                 className={`aspect-square rounded-xl text-3xl font-bold transition-all transform ${
                   isFlipped
-                    ? 'bg-gradient-to-br from-primary-500 to-accent-500 text-white scale-105 shadow-glow'
+                    ? 'bg-linear-to-br from-primary-500 to-accent-500 text-white scale-105 shadow-glow'
                     : 'card hover:scale-105 hover:shadow-lg text-muted-foreground hover-lift'
                 } ${
                   isAnimating && !card.isMatched ? 'animate-card-shake' : ''

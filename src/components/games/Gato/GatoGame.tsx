@@ -171,7 +171,7 @@ const GatoGame = () => {
                 key={cell.index}
                 onClick={() => handleCellClick(cell.index)}
                 className={`aspect-square card border-2 border-border hover:border-primary-300 dark:hover:border-primary-600 text-4xl font-bold transition-all disabled:cursor-not-allowed disabled:opacity-50 hover-lift ${
-                  isWinningCell ? 'animate-tictactoe-win bg-gradient-to-br from-success-400 to-success-600' : ''
+                  isWinningCell ? 'animate-tictactoe-win bg-linear-to-br from-success-400 to-success-600' : ''
                 } ${
                   isLastMove ? 'animate-tictactoe-place' : ''
                 }`}
