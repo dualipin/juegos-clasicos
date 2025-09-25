@@ -1,12 +1,19 @@
 import GameCard from '../components/GameCard/GameCard'
 
+// Import images
+import dadosImg from '/dados.jpg'
+import gatoImg from '/gato.jpg'
+import memoramaImg from '/memorama.jpg'
+import numerosImg from '/numeros.png'
+import piedraPapelTijeraImg from '/piedra-papel-tijera.svg'
+
 const games = [
     {
         id: 'dados',
         title: 'Juego de dados',
         method: '🔐 Números Criptográficamente Seguros',
         description: 'Dados virtuales que utilizan la Web Crypto API para generar números verdaderamente aleatorios, garantizando resultados impredecibles y justos.',
-        image: '/dados.jpg',
+        image: dadosImg,
         path: '/dados'
     },
     {
@@ -14,7 +21,7 @@ const games = [
         title: 'Juego de Gato - Tic Tac Toe',
         method: '🤖 IA con Aleatoriedad Verdadera',
         description: 'Juega contra una IA que toma decisiones usando números verdaderamente aleatorios, creando una experiencia de juego única e impredecible.',
-        image: '/gato.jpg',
+        image: gatoImg,
         path: '/gato'
     },
     {
@@ -22,7 +29,7 @@ const games = [
         title: 'Memorama',
         method: '🔀 Mezcla Criptográficamente Segura',
         description: 'Juego de memoria con cartas mezcladas usando algoritmos criptográficos para garantizar una distribución perfectamente aleatoria.',
-        image: '/memorama.jpg',
+        image: memoramaImg,
         path: '/memorama'
     },
     {
@@ -30,7 +37,7 @@ const games = [
         title: 'Adivina el Número',
         method: '🎯 Generación Uniforme Perfecta',
         description: 'Adivina números generados con distribución perfectamente uniforme usando técnicas criptográficas avanzadas.',
-        image: '/numeros.png',
+        image: numerosImg,
         path: '/adivina-numero'
     },
     {
@@ -38,7 +45,7 @@ const games = [
         title: 'Piedra, Papel o Tijera',
         method: '🤖 IA con Decisiones Aleatorias',
         description: 'Enfréntate a una IA que toma decisiones completamente impredecibles usando números criptográficamente seguros.',
-        image: '/piedra-papel-tijera.svg',
+        image: piedraPapelTijeraImg,
         path: '/piedra-papel-tijera'
     }
 ]
