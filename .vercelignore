@@ -1,7 +1,7 @@
 # Files and directories to ignore during Vercel deployment
 
 # Development files
-src/
+# src/ - DO NOT IGNORE: needed for build
 
 # Configuration files
 .eslintrc.cjs
