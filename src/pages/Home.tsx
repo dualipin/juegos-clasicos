@@ -1,11 +1,11 @@
 import GameCard from '../components/GameCard/GameCard'
 
 // Import images
-import dadosImg from '../assets/images/dados.jpg'
-import gatoImg from '../assets/images/gato.jpg'
-import memoramaImg from '../assets/images/memorama.jpg'
+import dadosImg from '../assets/images/dados.png'
+import gatoImg from '../assets/images/gato.png'
+import memoramaImg from '../assets/images/memorama.png'
 import numerosImg from '../assets/images/numeros.png'
-import piedraPapelTijeraImg from '../assets/images/piedra-papel-tijera.svg'
+import piedraPapelTijeraImg from '../assets/images/piedra-papel-tijera.png'
 
 const games = [
     {
@@ -56,7 +56,7 @@ const Home = () => {
             <div className="text-center space-y-4">
                 <h1 className="text-4xl font-bold text-gradient animate-slide-in-down">Bienvenido</h1>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.3s' }}>
-                    Descubre una colección de juegos que utilizan números verdaderamente aleatorios 
+                    Descubre una colección de juegos que utilizan números verdaderamente aleatorios
                     generados con tecnología criptográfica moderna para una experiencia completamente justa.
                 </p>
             </div>
