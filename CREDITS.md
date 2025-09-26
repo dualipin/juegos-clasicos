@@ -36,7 +36,3 @@ Este proyecto es de código abierto y está disponible bajo los términos que el
 ## 🙏 Agradecimientos
 
 Gracias a la comunidad de desarrolladores de código abierto por las herramientas y bibliotecas que hicieron posible este proyecto.
-
----
-
-**© 2023 dualipin** - Todos los derechos reservados
