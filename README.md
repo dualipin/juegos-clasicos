@@ -110,4 +110,4 @@ src/
 
 ---
 
-**Desarrollado por [dualipin](https://github.com/dualipin/)** © 2023
+**Desarrollado por [dualipin](https://github.com/dualipin/)**
