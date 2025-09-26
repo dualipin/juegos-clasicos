@@ -1,11 +1,11 @@
 import GameCard from '../components/GameCard/GameCard'
 
 // Import images
-import dadosImg from '/dados.jpg'
-import gatoImg from '/gato.jpg'
-import memoramaImg from '/memorama.jpg'
-import numerosImg from '/numeros.png'
-import piedraPapelTijeraImg from '/piedra-papel-tijera.svg'
+import dadosImg from '../assets/images/dados.jpg'
+import gatoImg from '../assets/images/gato.jpg'
+import memoramaImg from '../assets/images/memorama.jpg'
+import numerosImg from '../assets/images/numeros.png'
+import piedraPapelTijeraImg from '../assets/images/piedra-papel-tijera.svg'
 
 const games = [
     {
